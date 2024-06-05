@@ -9,8 +9,6 @@ import SwiftUI
 
 struct OnboardingScreen_ButtonsView: View {
     
-    @Environment(\.colorScheme) var colorScheme
-    
     @State var showingVerificationScreen = false
     
     var body: some View {
