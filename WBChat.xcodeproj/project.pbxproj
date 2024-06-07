@@ -13,6 +13,10 @@
 		FC17B1DA2C109B69005B91ED /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17B1D92C109B69005B91ED /* OnboardingScreen.swift */; };
 		FC17B1DC2C109BA2005B91ED /* VerificationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17B1DB2C109BA2005B91ED /* VerificationScreen.swift */; };
 		FC17B1E12C109F03005B91ED /* OnboardingScreen_ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17B1E02C109F03005B91ED /* OnboardingScreen_ButtonsView.swift */; };
+		FC17B2FA2C133DBB005B91ED /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17B2F92C133DBB005B91ED /* Contact.swift */; };
+		FC17B2FC2C133DD8005B91ED /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17B2FB2C133DD8005B91ED /* ContactsViewModel.swift */; };
+		FC17B2FE2C133E19005B91ED /* ContactsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17B2FD2C133E19005B91ED /* ContactsScreen.swift */; };
+		FC17B3002C133E2F005B91ED /* ContactsScreen_RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17B2FF2C133E2F005B91ED /* ContactsScreen_RowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		FC17B1D92C109B69005B91ED /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
 		FC17B1DB2C109BA2005B91ED /* VerificationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationScreen.swift; sourceTree = "<group>"; };
 		FC17B1E02C109F03005B91ED /* OnboardingScreen_ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen_ButtonsView.swift; sourceTree = "<group>"; };
+		FC17B2F92C133DBB005B91ED /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		FC17B2FB2C133DD8005B91ED /* ContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
+		FC17B2FD2C133E19005B91ED /* ContactsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsScreen.swift; sourceTree = "<group>"; };
+		FC17B2FF2C133E2F005B91ED /* ContactsScreen_RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsScreen_RowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +63,11 @@
 		FC17B1C92C109AE4005B91ED /* WBChat */ = {
 			isa = PBXGroup;
 			children = (
-				FC17B1D82C109B4C005B91ED /* Views */,
 				FC17B1CA2C109AE4005B91ED /* WBChatApp.swift */,
-				FC17B1CE2C109AE7005B91ED /* Assets.xcassets */,
+				FC17B2F32C133C4F005B91ED /* Models */,
+				FC17B1D82C109B4C005B91ED /* Views */,
+				FC17B2F42C133C5E005B91ED /* ViewModels */,
+				FC17B2F82C133D4A005B91ED /* Assets */,
 				FC17B1D02C109AE7005B91ED /* Preview Content */,
 			);
 			path = WBChat;
@@ -74,8 +84,9 @@
 		FC17B1D82C109B4C005B91ED /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FC17B2F62C133C8F005B91ED /* VerificationScreen */,
+				FC17B2F52C133C7B005B91ED /* ContactsScreen */,
 				FC17B1DF2C109ED8005B91ED /* Onboarding */,
-				FC17B1DB2C109BA2005B91ED /* VerificationScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -87,6 +98,47 @@
 				FC17B1E02C109F03005B91ED /* OnboardingScreen_ButtonsView.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		FC17B2F32C133C4F005B91ED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FC17B2F92C133DBB005B91ED /* Contact.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FC17B2F42C133C5E005B91ED /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FC17B2FB2C133DD8005B91ED /* ContactsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FC17B2F52C133C7B005B91ED /* ContactsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FC17B2FD2C133E19005B91ED /* ContactsScreen.swift */,
+				FC17B2FF2C133E2F005B91ED /* ContactsScreen_RowView.swift */,
+			);
+			path = ContactsScreen;
+			sourceTree = "<group>";
+		};
+		FC17B2F62C133C8F005B91ED /* VerificationScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FC17B1DB2C109BA2005B91ED /* VerificationScreen.swift */,
+			);
+			path = VerificationScreen;
+			sourceTree = "<group>";
+		};
+		FC17B2F82C133D4A005B91ED /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FC17B1CE2C109AE7005B91ED /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,8 +211,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC17B3002C133E2F005B91ED /* ContactsScreen_RowView.swift in Sources */,
+				FC17B2FE2C133E19005B91ED /* ContactsScreen.swift in Sources */,
 				FC17B1CB2C109AE4005B91ED /* WBChatApp.swift in Sources */,
+				FC17B2FC2C133DD8005B91ED /* ContactsViewModel.swift in Sources */,
 				FC17B1DC2C109BA2005B91ED /* VerificationScreen.swift in Sources */,
+				FC17B2FA2C133DBB005B91ED /* Contact.swift in Sources */,
 				FC17B1DA2C109B69005B91ED /* OnboardingScreen.swift in Sources */,
 				FC17B1E12C109F03005B91ED /* OnboardingScreen_ButtonsView.swift in Sources */,
 			);
@@ -304,6 +360,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,6 +390,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
