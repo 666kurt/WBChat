@@ -14,32 +14,19 @@ struct ContactsScreen_RowView: View {
     var body: some View {
         VStack(spacing: 0) {
             HStack(alignment: .top, spacing: 12) {
-                Image(contact.imageName)
-                    .overlay(alignment: .topTrailing) {
-                        if contact.isOnline {
-                            OnlineIndicatorView()
-                        }
-                    }
-                VStack(alignment: .leading, spacing: 6) {
-                    Text(contact.name)
-                        .font(CustomFont.bodyText1())
-                        .foregroundStyle(Color("activeColor"))
-                    Text(contact.lastSeen)
-                        .font(CustomFont.metadata1())
-                        .foregroundStyle(Color("disabledColor"))
-                }
+                PersonPhotoView(contact: contact)
+                PersonInfoView(contact: contact)
             }
+            .padding(4)
             .padding(.bottom, 12.5)
             .frame(maxWidth: .infinity, alignment: .leading)
             
-            Rectangle()
-                .frame(height: 1)
-                .foregroundStyle(Color("lineColor"))
+            DividerView()
         }
         .padding(.vertical, 8)
     }
 }
 
 #Preview {
-    ContactsScreen_RowView(contact: Contact(name: "Анастасия Ивановна", lastSeen: "Online", isOnline: true, imageName: "person1"))
+    ContactsScreen_RowView(contact: Contact(name: "Анастасия Ивановна", lastSeen: "Online", isOnline: true, hasStory: true, imageName: nil))
 }

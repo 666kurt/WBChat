@@ -8,12 +8,19 @@
 import SwiftUI
 
 struct ContactScreen_SeachView: View {
+    
+    @State var searchLabel: String = ""
+    
     var body: some View {
         HStack(spacing: 8) {
             Image("search")
                 .renderingMode(.template)
-            Text("Search")
-                .font(CustomFont.bodyText1())
+                .foregroundStyle(Color("disabledColor"))
+            TextField(text: $searchLabel) {
+                Text("Search")
+                    .font(CustomFont.bodyText1())
+                    .foregroundStyle(Color("disabledColor"))
+            }
         }
         .padding(.horizontal, 8)
         .padding(.vertical, 6)

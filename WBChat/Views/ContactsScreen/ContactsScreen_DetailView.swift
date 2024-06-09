@@ -17,5 +17,5 @@ struct ContactsScreen_DetailView: View {
 }
 
 #Preview {
-    ContactsScreen_DetailView(contact: Contact(name: "Анастасия Ивановна", lastSeen: "Online", isOnline: true, imageName: "person1"))
+    ContactsScreen_DetailView(contact: Contact(name: "Анастасия Ивановна", lastSeen: "Online", isOnline: true, hasStory: true, imageName: "person1"))
 }

@@ -12,5 +12,6 @@ struct Contact: Identifiable {
     let name: String
     let lastSeen: String
     let isOnline: Bool
-    let imageName: String
+    let hasStory: Bool
+    let imageName: String?
 }
