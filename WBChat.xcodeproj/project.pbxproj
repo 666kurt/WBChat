@@ -20,8 +20,8 @@
 		FC17B3022C13429F005B91ED /* ContactsScreen_DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17B3012C13429F005B91ED /* ContactsScreen_DetailView.swift */; };
 		FC17B3062C14D722005B91ED /* OnlineIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17B3052C14D722005B91ED /* OnlineIndicatorView.swift */; };
 		FC17B30A2C15A0C9005B91ED /* Font+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17B3092C15A0C9005B91ED /* Font+extension.swift */; };
-		FC17B30E2C15AEE5005B91ED /* ContactScreen_SeachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17B30D2C15AEE5005B91ED /* ContactScreen_SeachView.swift */; };
-		FC17B3102C15B8A2005B91ED /* ContactScreen_NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17B30F2C15B8A2005B91ED /* ContactScreen_NavigationBarView.swift */; };
+		FC17B30E2C15AEE5005B91ED /* SeachBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17B30D2C15AEE5005B91ED /* SeachBarView.swift */; };
+		FC17B3102C15B8A2005B91ED /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17B30F2C15B8A2005B91ED /* NavigationBarView.swift */; };
 		FC17B3122C15F956005B91ED /* StoryIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17B3112C15F956005B91ED /* StoryIndicatorView.swift */; };
 		FC17B3142C15FDBA005B91ED /* Color+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17B3132C15FDBA005B91ED /* Color+extension.swift */; };
 		FC17B3162C1601E3005B91ED /* PersonPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17B3152C1601E3005B91ED /* PersonPhotoView.swift */; };
@@ -44,8 +44,8 @@
 		FC17B3012C13429F005B91ED /* ContactsScreen_DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsScreen_DetailView.swift; sourceTree = "<group>"; };
 		FC17B3052C14D722005B91ED /* OnlineIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineIndicatorView.swift; sourceTree = "<group>"; };
 		FC17B3092C15A0C9005B91ED /* Font+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+extension.swift"; sourceTree = "<group>"; };
-		FC17B30D2C15AEE5005B91ED /* ContactScreen_SeachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactScreen_SeachView.swift; sourceTree = "<group>"; };
-		FC17B30F2C15B8A2005B91ED /* ContactScreen_NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactScreen_NavigationBarView.swift; sourceTree = "<group>"; };
+		FC17B30D2C15AEE5005B91ED /* SeachBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeachBarView.swift; sourceTree = "<group>"; };
+		FC17B30F2C15B8A2005B91ED /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		FC17B3112C15F956005B91ED /* StoryIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryIndicatorView.swift; sourceTree = "<group>"; };
 		FC17B3132C15FDBA005B91ED /* Color+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+extension.swift"; sourceTree = "<group>"; };
 		FC17B3152C1601E3005B91ED /* PersonPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonPhotoView.swift; sourceTree = "<group>"; };
@@ -144,8 +144,6 @@
 				FC17B2FD2C133E19005B91ED /* ContactsScreen.swift */,
 				FC17B2FF2C133E2F005B91ED /* ContactsScreen_RowView.swift */,
 				FC17B3012C13429F005B91ED /* ContactsScreen_DetailView.swift */,
-				FC17B30D2C15AEE5005B91ED /* ContactScreen_SeachView.swift */,
-				FC17B30F2C15B8A2005B91ED /* ContactScreen_NavigationBarView.swift */,
 			);
 			path = ContactsScreen;
 			sourceTree = "<group>";
@@ -169,6 +167,8 @@
 		FC17B3032C14D6F5005B91ED /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				FC17B30F2C15B8A2005B91ED /* NavigationBarView.swift */,
+				FC17B30D2C15AEE5005B91ED /* SeachBarView.swift */,
 				FC17B3052C14D722005B91ED /* OnlineIndicatorView.swift */,
 				FC17B3112C15F956005B91ED /* StoryIndicatorView.swift */,
 				FC17B3152C1601E3005B91ED /* PersonPhotoView.swift */,
@@ -260,7 +260,7 @@
 				FC17B3002C133E2F005B91ED /* ContactsScreen_RowView.swift in Sources */,
 				FC17B3182C160527005B91ED /* PersonInfoView.swift in Sources */,
 				FC17B2FE2C133E19005B91ED /* ContactsScreen.swift in Sources */,
-				FC17B3102C15B8A2005B91ED /* ContactScreen_NavigationBarView.swift in Sources */,
+				FC17B3102C15B8A2005B91ED /* NavigationBarView.swift in Sources */,
 				FC17B30A2C15A0C9005B91ED /* Font+extension.swift in Sources */,
 				FC17B1CB2C109AE4005B91ED /* WBChatApp.swift in Sources */,
 				FC17B2FC2C133DD8005B91ED /* ContactsViewModel.swift in Sources */,
@@ -274,7 +274,7 @@
 				FC17B3162C1601E3005B91ED /* PersonPhotoView.swift in Sources */,
 				FC17B1DA2C109B69005B91ED /* OnboardingScreen.swift in Sources */,
 				FC17B1E12C109F03005B91ED /* OnboardingScreen_ButtonsView.swift in Sources */,
-				FC17B30E2C15AEE5005B91ED /* ContactScreen_SeachView.swift in Sources */,
+				FC17B30E2C15AEE5005B91ED /* SeachBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

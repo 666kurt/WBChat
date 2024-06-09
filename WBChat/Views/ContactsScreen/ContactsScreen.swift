@@ -14,12 +14,13 @@ struct ContactsScreen: View {
     var body: some View {
         NavigationStack {
             VStack(spacing: 0) {
-                ContactScreen_NavigationBarView()
+                NavigationBarView()
                 ScrollView(.vertical, showsIndicators: false) {
                     VStack(spacing: 0) {
-                        ContactScreen_SeachView()
-                        ForEach(vm.contacts) { contact in
-                            NavigationLink(destination:ContactsScreen_DetailView(contact: contact)) {
+                        SeachBarView(searchResult: $vm.searchResult)
+                        ForEach(vm.filteredContact) { contact in
+                            NavigationLink(destination: ContactsScreen_DetailView(contact: contact)
+                            ) {
                                 ContactsScreen_RowView(contact: contact)
                             }
                         }

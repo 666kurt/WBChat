@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct StoryIndicatorView: View {
+    
+    let gradientColors: [Color]
+    
     var body: some View {
         RoundedRectangle(cornerRadius: 16)
-            .stroke(LinearGradient(colors: [
-                Color(hex: "#EC9EFF"), Color(hex: "#5F2EEA"),
-            ], startPoint: .topLeading, endPoint: .bottomTrailing), lineWidth: 2)
+            .stroke(LinearGradient(colors: gradientColors, startPoint: .topLeading, endPoint: .bottomTrailing), lineWidth: 2)
             .frame(width: 54, height: 54)
     }
 }
 
 #Preview {
-    StoryIndicatorView()
+    StoryIndicatorView(gradientColors: [Color(hex: "#EC9EFF"), Color(hex: "#5F2EEA")])
 }

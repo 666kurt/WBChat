@@ -21,6 +21,11 @@ struct PersonPhotoView: View {
                         OnlineIndicatorView()
                     }
                 }
+                .background() {
+                    if contact.hasStory {
+                        StoryIndicatorView(gradientColors: [Color(hex: "#D2D5F9"), Color(hex: "#2C37E1")])
+                    }
+                }
         } else {
             Text(initials(for: contact.name))
                 .frame(width: 48, height: 48)
@@ -35,9 +40,10 @@ struct PersonPhotoView: View {
                 }
                 .background() {
                     if contact.hasStory {
-                        StoryIndicatorView()
+                        StoryIndicatorView(gradientColors: [Color(hex: "#EC9EFF"), Color(hex: "#5F2EEA")])
                     }
                 }
+
         }
     }
     

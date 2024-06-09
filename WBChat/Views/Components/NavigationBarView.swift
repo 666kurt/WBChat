@@ -1,5 +1,5 @@
 //
-//  ContactScreen_NavigationBarView.swift
+//  NavigationBarView.swift
 //  WBChat
 //
 //  Created by Максим Шишлов on 09.06.2024.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContactScreen_NavigationBarView: View {
+struct NavigationBarView: View {
     var body: some View {
         HStack {
             Text("Контакты")
@@ -26,5 +26,5 @@ struct ContactScreen_NavigationBarView: View {
 }
 
 #Preview {
-    ContactScreen_NavigationBarView()
+    NavigationBarView()
 }
