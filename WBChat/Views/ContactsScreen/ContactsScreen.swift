@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct ContactsScreen: View {
+    
+    @StateObject var vm = ContactsViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            VStack(spacing: 0) {
+                ContactScreen_NavigationBarView()
+                ContactScreen_SeachView()
+                ScrollView(.vertical, showsIndicators: false) {
+                    ForEach(vm.contacts) { contact in
+                        NavigationLink(destination:ContactsScreen_DetailView(contact: contact)) {
+                            ContactsScreen_RowView(contact: contact)
+                        }
+                    }
+                }
+            }
+            .padding(.horizontal, 24)
+        }
     }
 }
 

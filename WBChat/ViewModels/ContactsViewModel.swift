@@ -17,5 +17,17 @@ final class ContactsViewModel: ObservableObject {
         Contact(name: "Арбуз Дыня", lastSeen: "Online", isOnline: true, imageName: "person4"),
         Contact(name: "Иван Иванов", lastSeen: "Online", isOnline: true, imageName: "person5"),
         Contact(name: "Лиса Алиса", lastSeen: "Last seen 30 minutes ago", isOnline: false, imageName: "person6"),
+        Contact(name: "Лиса Алиса", lastSeen: "Last seen 30 minutes ago", isOnline: false, imageName: "person6"),
+        Contact(name: "Лиса Алиса", lastSeen: "Last seen 30 minutes ago", isOnline: false, imageName: "person6"),
+        Contact(name: "Лиса Алиса", lastSeen: "Last seen 30 minutes ago", isOnline: false, imageName: "person6"),
+        Contact(name: "Лиса Алиса", lastSeen: "Last seen 30 minutes ago", isOnline: false, imageName: "person6"),
+        Contact(name: "Лиса Алиса", lastSeen: "Last seen 30 minutes ago", isOnline: false, imageName: "person6"),
+        Contact(name: "Лиса Алиса", lastSeen: "Last seen 30 minutes ago", isOnline: false, imageName: "person6"),
+        Contact(name: "Лиса Алиса", lastSeen: "Last seen 30 minutes ago", isOnline: false, imageName: "person6"),
+        Contact(name: "Лиса Алиса", lastSeen: "Last seen 30 minutes ago", isOnline: false, imageName: "person6"),
+        Contact(name: "Лиса Алиса", lastSeen: "Last seen 30 minutes ago", isOnline: false, imageName: "person6"),
+        Contact(name: "Лиса Алиса", lastSeen: "Last seen 30 minutes ago", isOnline: false, imageName: "person6"),
+        Contact(name: "Лиса Алиса", lastSeen: "Last seen 30 minutes ago", isOnline: false, imageName: "person6"),
+        Contact(name: "Лиса Алиса", lastSeen: "Last seen 30 minutes ago", isOnline: false, imageName: "person6"),
     ]
 }
