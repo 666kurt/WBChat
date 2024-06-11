@@ -26,7 +26,7 @@ struct OnboardingScreen_ButtonsView: View {
                     .font(.system(size: 16, weight: .semibold))
                     .frame(maxWidth: .infinity)
                     .padding()
-                    .foregroundStyle(Color("offwhiteColor"))
+                    .foregroundStyle(Color("neutralColor"))
                     .background(Color("primaryColor"))
                     .clipShape(RoundedRectangle(cornerRadius: 30))
             })

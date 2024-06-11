@@ -16,8 +16,8 @@ struct ContactsScreen: View {
             VStack(spacing: 0) {
                 NavigationBarView()
                 ScrollView(.vertical, showsIndicators: false) {
-                    VStack(spacing: 0) {
-                        SeachBarView(searchResult: $vm.searchResult)
+                    SeachBarView(searchResult: $vm.searchResult)
+                    LazyVStack(spacing: 0) {
                         ForEach(vm.filteredContact) { contact in
                             NavigationLink(destination: ContactsScreen_DetailView(contact: contact)
                             ) {

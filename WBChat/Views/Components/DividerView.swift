@@ -11,7 +11,8 @@ struct DividerView: View {
     var body: some View {
         Rectangle()
             .frame(height: 1)
-            .foregroundStyle(Color("lineColor"))    }
+            .foregroundStyle(Color("lineColor"))
+    }
 }
 
 #Preview {

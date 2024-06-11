@@ -11,7 +11,7 @@ import SwiftUI
 struct WBChatApp: App {
     var body: some Scene {
         WindowGroup {
-            ContactsScreen()
+            WBChatMainView()
         }
     }
 }

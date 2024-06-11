@@ -23,6 +23,7 @@ struct OnboardingScreen: View {
             
             OnboardingScreen_ButtonsView()
         }
+        .background(Color("backgroundColor"))
     }
 }
 
