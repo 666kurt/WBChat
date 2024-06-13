@@ -21,7 +21,7 @@ struct OnboardingScreen: View {
             
             Spacer()
             
-            OnboardingScreen_ButtonsView()
+            OnboardingScreen_ButtonView()
         }
     }
 }

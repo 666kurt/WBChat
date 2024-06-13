@@ -1,5 +1,5 @@
 //
-//  OnboardingScreen_ButtonsView.swift
+//  OnboardingScreen_ButtonView.swift
 //  WBChat
 //
 //  Created by Максим Шишлов on 05.06.2024.
@@ -7,18 +7,12 @@
 
 import SwiftUI
 
-struct OnboardingScreen_ButtonsView: View {
+struct OnboardingScreen_ButtonView: View {
     
     @State var showingVerificationScreen = false
     
     var body: some View {
         VStack(spacing: 18) {
-            Button(action: {}, label: {
-                Text("Пользовательское соглашение")
-                    .foregroundStyle(Color("activeColor"))
-                    .font(.system(size: 14, weight: .semibold))
-                    .padding()
-            })
             Button(action: {
                 showingVerificationScreen = true
             }, label: {
@@ -39,5 +33,5 @@ struct OnboardingScreen_ButtonsView: View {
 }
 
 #Preview {
-    OnboardingScreen_ButtonsView()
+    OnboardingScreen_ButtonView()
 }
