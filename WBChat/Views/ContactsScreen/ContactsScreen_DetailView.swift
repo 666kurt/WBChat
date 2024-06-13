@@ -12,7 +12,9 @@ struct ContactsScreen_DetailView: View {
     let contact: Contact
     
     var body: some View {
-        Text(contact.name)
+        VStack {
+            Text(contact.name)
+        }
     }
 }
 

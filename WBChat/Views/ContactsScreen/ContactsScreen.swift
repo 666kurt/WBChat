@@ -10,6 +10,7 @@ import SwiftUI
 struct ContactsScreen: View {
     
     @StateObject var vm = ContactsViewModel()
+    @Namespace private var animationNamespace
     
     var body: some View {
         NavigationStack {
@@ -20,6 +21,7 @@ struct ContactsScreen: View {
                     LazyVStack(spacing: 0) {
                         ForEach(vm.filteredContact) { contact in
                             NavigationLink(destination: ContactsScreen_DetailView(contact: contact)
+                    
                             ) {
                                 ContactsScreen_RowView(contact: contact)
                             }

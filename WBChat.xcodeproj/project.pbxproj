@@ -93,7 +93,6 @@
 		FC17B1C92C109AE4005B91ED /* WBChat */ = {
 			isa = PBXGroup;
 			children = (
-				FC17B31B2C182E36005B91ED /* WBChatMainView.swift */,
 				FC17B1CA2C109AE4005B91ED /* WBChatApp.swift */,
 				FC17B2F32C133C4F005B91ED /* Models */,
 				FC17B1D82C109B4C005B91ED /* Views */,
@@ -116,12 +115,13 @@
 		FC17B1D82C109B4C005B91ED /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FC17B31B2C182E36005B91ED /* WBChatMainView.swift */,
 				FC17B3032C14D6F5005B91ED /* Components */,
 				FC17B3282C184406005B91ED /* OnboardingScreen */,
 				FC17B2F62C133C8F005B91ED /* VerificationScreen */,
+				FC17B2F52C133C7B005B91ED /* ContactsScreen */,
 				FC17B3202C183198005B91ED /* SettingsScreen */,
 				FC17B31D2C183177005B91ED /* ChatsScreen */,
-				FC17B2F52C133C7B005B91ED /* ContactsScreen */,
 			);
 			path = Views;
 			sourceTree = "<group>";
