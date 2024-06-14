@@ -9,12 +9,29 @@ import SwiftUI
 
 struct ContactsScreen_DetailView: View {
     
+    @Environment(\.dismiss) var dismiss;
+    
     let contact: Contact
     
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
+            NavigationBarView(title: "Профиль", 
+                              backButtonImage: "back_button",
+                              backButtonAction: {
+                                    dismiss()
+                                },
+                              rightButtonImage: "pencil")
+            
+            Spacer()
+            
             Text(contact.name)
+            
+            Spacer()
         }
+        .padding(.horizontal, 24)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color("backgroundColor"))
+        .navigationBarBackButtonHidden(true)
     }
 }
 

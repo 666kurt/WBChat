@@ -15,7 +15,7 @@ struct ContactsScreen: View {
     var body: some View {
         NavigationStack {
             VStack(spacing: 0) {
-                NavigationBarView()
+                NavigationBarView(title: "Контакты", rightButtonImage: "plus")
                 ScrollView(.vertical, showsIndicators: false) {
                     SeachBarView(searchResult: $vm.searchResult)
                     LazyVStack(spacing: 0) {
