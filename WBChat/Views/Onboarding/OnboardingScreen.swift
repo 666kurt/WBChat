@@ -18,11 +18,16 @@ struct OnboardingScreen: View {
             Text("Общайтесь с друзьями и близкими легко")
                 .font(.system(size: 24, weight: .bold))
                 .multilineTextAlignment(.center)
+                
             
             Spacer()
             
-            OnboardingScreen_ButtonView()
+            VStack {
+                OnboardingScreen_InlineButtonsView()
+                OnboardingScreen_ButtonView()
+            }
         }
+        .background(Color("backgroundColor"))
     }
 }
 

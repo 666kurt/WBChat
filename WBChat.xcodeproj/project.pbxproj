@@ -14,6 +14,7 @@
 		FC17B1DC2C109BA2005B91ED /* VerificationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17B1DB2C109BA2005B91ED /* VerificationScreen.swift */; };
 		FC17B1E12C109F03005B91ED /* OnboardingScreen_ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17B1E02C109F03005B91ED /* OnboardingScreen_ButtonView.swift */; };
 		FC17B3302C1AC8CD005B91ED /* OnboardingScreen_InlineButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17B32F2C1AC8CD005B91ED /* OnboardingScreen_InlineButtonsView.swift */; };
+		FC17B33C2C1C1030005B91ED /* Font+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17B33B2C1C1030005B91ED /* Font+extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		FC17B1DB2C109BA2005B91ED /* VerificationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationScreen.swift; sourceTree = "<group>"; };
 		FC17B1E02C109F03005B91ED /* OnboardingScreen_ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen_ButtonView.swift; sourceTree = "<group>"; };
 		FC17B32F2C1AC8CD005B91ED /* OnboardingScreen_InlineButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen_InlineButtonsView.swift; sourceTree = "<group>"; };
+		FC17B33B2C1C1030005B91ED /* Font+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		FC17B1C92C109AE4005B91ED /* WBChat */ = {
 			isa = PBXGroup;
 			children = (
+				FC17B33A2C1C101A005B91ED /* Extension */,
 				FC17B1D82C109B4C005B91ED /* Views */,
 				FC17B1CA2C109AE4005B91ED /* WBChatApp.swift */,
 				FC17B1CE2C109AE7005B91ED /* Assets.xcassets */,
@@ -98,6 +101,14 @@
 				FC17B32F2C1AC8CD005B91ED /* OnboardingScreen_InlineButtonsView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		FC17B33A2C1C101A005B91ED /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FC17B33B2C1C1030005B91ED /* Font+extensions.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +185,7 @@
 				FC17B1DC2C109BA2005B91ED /* VerificationScreen.swift in Sources */,
 				FC17B1DA2C109B69005B91ED /* OnboardingScreen.swift in Sources */,
 				FC17B3302C1AC8CD005B91ED /* OnboardingScreen_InlineButtonsView.swift in Sources */,
+				FC17B33C2C1C1030005B91ED /* Font+extensions.swift in Sources */,
 				FC17B1E12C109F03005B91ED /* OnboardingScreen_ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

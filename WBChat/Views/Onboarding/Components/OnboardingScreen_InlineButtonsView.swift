@@ -11,12 +11,17 @@ struct OnboardingScreen_InlineButtonsView: View {
     var body: some View {
         VStack {
             Text("Нажимая кнопку продолжить я соглашаюсь с")
-            HStack {
+            HStack(spacing: 0) {
                 Button("Политикой Конфиденциальности") {}
+                    .foregroundStyle(Color("primaryColor"))
                 Text(" и ")
                 Button("Условиями Использования") {}
+                    .foregroundStyle(Color("primaryColor"))
             }
         }
+        .font(CustomFont.metadata2())
+        .foregroundStyle(Color("weakColor"))
+        .padding(.bottom, 13)
     }
 }
 
