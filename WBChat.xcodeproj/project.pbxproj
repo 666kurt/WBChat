@@ -59,7 +59,7 @@
 		FC17B1C92C109AE4005B91ED /* WBChat */ = {
 			isa = PBXGroup;
 			children = (
-				FC17B33A2C1C101A005B91ED /* Extension */,
+				FC17B33A2C1C101A005B91ED /* Extensions */,
 				FC17B1D82C109B4C005B91ED /* Views */,
 				FC17B1CA2C109AE4005B91ED /* WBChatApp.swift */,
 				FC17B1CE2C109AE7005B91ED /* Assets.xcassets */,
@@ -103,12 +103,12 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		FC17B33A2C1C101A005B91ED /* Extension */ = {
+		FC17B33A2C1C101A005B91ED /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				FC17B33B2C1C1030005B91ED /* Font+extensions.swift */,
 			);
-			path = Extension;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
