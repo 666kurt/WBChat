@@ -19,6 +19,7 @@
 		FC17B1CE2C109AE7005B91ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC17B1D12C109AE7005B91ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FC17B33D2C1F4BA9005B91ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FC3AAE922C22BAC3003AB1D0 /* WBChat_HW4.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = WBChat_HW4.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +54,7 @@
 			children = (
 				FC17B1CA2C109AE4005B91ED /* WBChatApp.swift */,
 				FC17B33D2C1F4BA9005B91ED /* ContentView.swift */,
+				FC3AAE922C22BAC3003AB1D0 /* WBChat_HW4.playground */,
 				FC17B1CE2C109AE7005B91ED /* Assets.xcassets */,
 				FC17B1D02C109AE7005B91ED /* Preview Content */,
 			);
