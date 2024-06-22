@@ -19,5 +19,5 @@ struct StoryIndicatorView: View {
 }
 
 #Preview {
-    StoryIndicatorView(gradientColors: [Color(hex: "#EC9EFF"), Color(hex: "#5F2EEA")])
+    StoryIndicatorView(gradientColors: [Color("#EC9EFF"), Color("#5F2EEA")])
 }

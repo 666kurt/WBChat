@@ -55,5 +55,5 @@ struct PersonPhotoView: View {
 }
 
 #Preview {
-    PersonPhotoView(contact: Contact(name: "Анастасия Ивановна", lastSeen: "Online", isOnline: true, hasStory: true, imageName: nil))
+    PersonPhotoView(contact: Contact(name: "Анастасия Ивановна", lastSeen: "Online", isOnline: true, hasStory: true, imageName: "person1"))
 }
