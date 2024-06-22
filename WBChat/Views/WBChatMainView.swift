@@ -10,6 +10,7 @@ import SwiftUI
 struct WBChatMainView: View {
     
     @State private var selectedScreen: Screens = .contacts
+    @StateObject private var router: Router = .init()
     
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -17,11 +18,11 @@ struct WBChatMainView: View {
                 Spacer()
                 switch selectedScreen {
                 case .contacts:
-                    ContactsScreen()
+                    ContactsScreen().environmentObject(router)
                 case .chats:
-                    ChatsScreen()
+                    ChatsScreen().environmentObject(router)
                 case .settings:
-                    SettingsScreen()
+                    SettingsScreen().environmentObject(router)
                 }
                 Spacer()
             }
@@ -33,4 +34,5 @@ struct WBChatMainView: View {
 
 #Preview {
     WBChatMainView()
+        .environmentObject(Router())
 }

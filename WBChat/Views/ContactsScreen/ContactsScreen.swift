@@ -10,7 +10,7 @@ import SwiftUI
 struct ContactsScreen: View {
     
     @StateObject var vm = ContactsViewModel()
-    @Namespace private var animationNamespace
+    @EnvironmentObject var router: Router
     
     var body: some View {
         NavigationStack {

@@ -32,6 +32,7 @@
 		FC17B3222C1831A8005B91ED /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17B3212C1831A8005B91ED /* SettingsScreen.swift */; };
 		FC17B3252C184057005B91ED /* TabBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17B3242C184057005B91ED /* TabBarItemView.swift */; };
 		FC17B3272C184117005B91ED /* ChatTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17B3262C184117005B91ED /* ChatTabBarView.swift */; };
+		FC3AAF202C26FA48003AB1D0 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3AAF1F2C26FA48003AB1D0 /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		FC17B3212C1831A8005B91ED /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 		FC17B3242C184057005B91ED /* TabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemView.swift; sourceTree = "<group>"; };
 		FC17B3262C184117005B91ED /* ChatTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTabBarView.swift; sourceTree = "<group>"; };
+		FC3AAF1F2C26FA48003AB1D0 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,8 @@
 				FC17B2F32C133C4F005B91ED /* Models */,
 				FC17B1D82C109B4C005B91ED /* Views */,
 				FC17B2F42C133C5E005B91ED /* ViewModels */,
+				FC17B3032C14D6F5005B91ED /* Components */,
+				FC3AAF1E2C26FA31003AB1D0 /* Router */,
 				FC17B3072C15A0A0005B91ED /* Extensions */,
 				FC17B2F82C133D4A005B91ED /* Assets */,
 				FC17B1D02C109AE7005B91ED /* Preview Content */,
@@ -116,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				FC17B31B2C182E36005B91ED /* WBChatMainView.swift */,
-				FC17B3032C14D6F5005B91ED /* Components */,
 				FC17B3282C184406005B91ED /* OnboardingScreen */,
 				FC17B2F62C133C8F005B91ED /* VerificationScreen */,
 				FC17B2F52C133C7B005B91ED /* ContactsScreen */,
@@ -226,6 +229,14 @@
 			path = OnboardingScreen;
 			sourceTree = "<group>";
 		};
+		FC3AAF1E2C26FA31003AB1D0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FC3AAF1F2C26FA48003AB1D0 /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -312,6 +323,7 @@
 				FC17B31C2C182E36005B91ED /* WBChatMainView.swift in Sources */,
 				FC17B31F2C18318B005B91ED /* ChatsScreen.swift in Sources */,
 				FC17B31A2C1605D0005B91ED /* DividerView.swift in Sources */,
+				FC3AAF202C26FA48003AB1D0 /* Router.swift in Sources */,
 				FC17B3022C13429F005B91ED /* ContactsScreen_DetailView.swift in Sources */,
 				FC17B2FA2C133DBB005B91ED /* Contact.swift in Sources */,
 				FC17B3062C14D722005B91ED /* OnlineIndicatorView.swift in Sources */,
