@@ -7,12 +7,6 @@
 
 import SwiftUI
 
-enum Screens {
-    case contacts
-    case chats
-    case settings
-}
-
 struct ChatTabBarView: View {
     
     @Binding var selectedScreen: Screens

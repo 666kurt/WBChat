@@ -8,7 +8,7 @@
 import Foundation
 
 struct Contact: Identifiable {
-    let id = UUID().uuidString
+    var id = UUID().uuidString
     let name: String
     let lastSeen: String
     let isOnline: Bool

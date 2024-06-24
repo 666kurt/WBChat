@@ -9,28 +9,30 @@ import SwiftUI
 
 struct WBChatMainView: View {
     
-    @State private var selectedScreen: Screens = .contacts
+    @StateObject private var router = Router.shared
     
     var body: some View {
         ZStack(alignment: .bottom) {
             VStack(spacing: 0) {
                 Spacer()
-                switch selectedScreen {
+                switch router.selectedScreen {
                 case .contacts:
-                    ContactsScreen()
+                    ContactsScreen().environmentObject(router)
                 case .chats:
-                    ChatsScreen()
+                    ChatsScreen().environmentObject(router)
                 case .settings:
-                    SettingsScreen()
+                    SettingsScreen().environmentObject(router)
                 }
                 Spacer()
+                ChatTabBarView(selectedScreen: $router.selectedScreen)
             }
-            ChatTabBarView(selectedScreen: $selectedScreen)
+            .ignoresSafeArea(.container)
+            .environmentObject(router)
         }
-        .ignoresSafeArea(.container)
     }
 }
 
 #Preview {
     WBChatMainView()
+        .environmentObject(Router.shared)
 }
