@@ -15,6 +15,10 @@ enum Screens: Hashable {
 
 class Router: ObservableObject {
     @Published var path: [Screens] = []
+    @Published var selectedScreen: Screens = .contacts
+    
+    static let shared = Router()
+    private init() {}
     
     func navigate(to screen: Screens) {
         path.append(screen)

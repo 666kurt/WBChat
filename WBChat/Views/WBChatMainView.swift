@@ -9,14 +9,13 @@ import SwiftUI
 
 struct WBChatMainView: View {
     
-    @State private var selectedScreen: Screens = .contacts
-    @StateObject private var router: Router = .init()
+    @StateObject private var router = Router.shared
     
     var body: some View {
         ZStack(alignment: .bottom) {
             VStack(spacing: 0) {
                 Spacer()
-                switch selectedScreen {
+                switch router.selectedScreen {
                 case .contacts:
                     ContactsScreen().environmentObject(router)
                 case .chats:
@@ -26,13 +25,14 @@ struct WBChatMainView: View {
                 }
                 Spacer()
             }
-            ChatTabBarView(selectedScreen: $selectedScreen)
+            ChatTabBarView(selectedScreen: $router.selectedScreen)
         }
         .ignoresSafeArea(.container)
+        .environmentObject(router)
     }
 }
 
 #Preview {
     WBChatMainView()
-        .environmentObject(Router())
+        .environmentObject(Router.shared)
 }
